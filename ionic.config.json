@@ -1,0 +1,7 @@
+{
+  "name": "BBChat-Front",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
