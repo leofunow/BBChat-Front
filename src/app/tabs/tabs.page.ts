@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IonRouterOutlet } from '@ionic/angular';
 
 @Component({
   selector: 'app-tabs',
@@ -7,6 +8,13 @@ import { Component } from '@angular/core';
 })
 export class TabsPage {
 
-  constructor() {}
+  constructor(private routerOutlet: IonRouterOutlet) {
+  }
+  ionViewDidEnter() {
+    this.routerOutlet.swipeGesture = false;
+  }
+  ionViewWillLeave() {
+    this.routerOutlet.swipeGesture = true;
+  }
 
 }
