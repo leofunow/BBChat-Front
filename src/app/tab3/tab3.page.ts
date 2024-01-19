@@ -8,10 +8,21 @@ import { AuthService } from '../services/user/auth.service';
 })
 export class Tab3Page {
 
-  constructor(private authService: AuthService) {}
+  themeChecked = false;
+
+  constructor(private authService: AuthService) {
+    let theme = localStorage.getItem('theme');
+    this.themeChecked = theme == 'dark';
+  }
 
   logout() {
     this.authService.removeAuthToken();
+  }
+
+  toggleTheme(event: any) {
+    document.body.classList.toggle('dark', event.detail.checked);
+    localStorage.setItem('theme', event.detail.checked ? 'dark' : 'light');
+    let prefDark = window.matchMedia('(prefers-color-scheme: dark)');
   }
 
 }

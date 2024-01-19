@@ -1,0 +1,15 @@
+ion-card{
+    padding: 12px;
+    margin: 6px 12px;
+    
+}
+
+#root{
+    display: flex;
+    align-items: center;
+}
+
+.right{
+    flex-direction: row-reverse;
+    justify-content: end;
+}

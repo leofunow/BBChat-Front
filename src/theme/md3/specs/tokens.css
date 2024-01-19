@@ -1,0 +1,523 @@
+:root {
+  --md-source: #00ff98;
+  --md-source-rgb: 0 255 152;
+  --md-source-success: #00ff00;
+  --md-source-success-rgb: 0 255 0;
+  --md-source-warning: #ffff00;
+  --md-source-warning-rgb: 255 255 0;
+  
+  /* Primary color palette */
+  --md-ref-palette-primary0: #000000;
+  --md-ref-palette-primary0-rgb: 0 0 0;
+  --md-ref-palette-primary10: #00210f;
+  --md-ref-palette-primary10-rgb: 0 33 15;
+  --md-ref-palette-primary20: #00391e;
+  --md-ref-palette-primary20-rgb: 0 57 30;
+  --md-ref-palette-primary30: #00522d;
+  --md-ref-palette-primary30-rgb: 0 82 45;
+  --md-ref-palette-primary40: #006d3e;
+  --md-ref-palette-primary40-rgb: 0 109 62;
+  --md-ref-palette-primary50: #00894f;
+  --md-ref-palette-primary50-rgb: 0 137 79;
+  --md-ref-palette-primary60: #00a661;
+  --md-ref-palette-primary60-rgb: 0 166 97;
+  --md-ref-palette-primary70: #00c474;
+  --md-ref-palette-primary70-rgb: 0 196 116;
+  --md-ref-palette-primary80: #00e387;
+  --md-ref-palette-primary80-rgb: 0 227 135;
+  --md-ref-palette-primary90: #59ffa4;
+  --md-ref-palette-primary90-rgb: 89 255 164;
+  --md-ref-palette-primary95: #c2ffd2;
+  --md-ref-palette-primary95-rgb: 194 255 210;
+  --md-ref-palette-primary99: #f5fff4;
+  --md-ref-palette-primary99-rgb: 245 255 244;
+  --md-ref-palette-primary100: #ffffff;
+  --md-ref-palette-primary100-rgb: 255 255 255;
+  
+  /* Secondary color palette */
+  --md-ref-palette-secondary0: #000000;
+  --md-ref-palette-secondary0-rgb: 0 0 0;
+  --md-ref-palette-secondary10: #0c1f13;
+  --md-ref-palette-secondary10-rgb: 12 31 19;
+  --md-ref-palette-secondary20: #213527;
+  --md-ref-palette-secondary20-rgb: 33 53 39;
+  --md-ref-palette-secondary30: #384b3d;
+  --md-ref-palette-secondary30-rgb: 56 75 61;
+  --md-ref-palette-secondary40: #4f6354;
+  --md-ref-palette-secondary40-rgb: 79 99 84;
+  --md-ref-palette-secondary50: #677c6c;
+  --md-ref-palette-secondary50-rgb: 103 124 108;
+  --md-ref-palette-secondary60: #809685;
+  --md-ref-palette-secondary60-rgb: 128 150 133;
+  --md-ref-palette-secondary70: #9bb19f;
+  --md-ref-palette-secondary70-rgb: 155 177 159;
+  --md-ref-palette-secondary80: #b6ccb9;
+  --md-ref-palette-secondary80-rgb: 182 204 185;
+  --md-ref-palette-secondary90: #d1e8d5;
+  --md-ref-palette-secondary90-rgb: 209 232 213;
+  --md-ref-palette-secondary95: #e0f7e3;
+  --md-ref-palette-secondary95-rgb: 224 247 227;
+  --md-ref-palette-secondary99: #f5fff4;
+  --md-ref-palette-secondary99-rgb: 245 255 244;
+  --md-ref-palette-secondary100: #ffffff;
+  --md-ref-palette-secondary100-rgb: 255 255 255;
+  
+  /* Tertiary color palette */
+  --md-ref-palette-tertiary0: #000000;
+  --md-ref-palette-tertiary0-rgb: 0 0 0;
+  --md-ref-palette-tertiary10: #001f26;
+  --md-ref-palette-tertiary10-rgb: 0 31 38;
+  --md-ref-palette-tertiary20: #023640;
+  --md-ref-palette-tertiary20-rgb: 2 54 64;
+  --md-ref-palette-tertiary30: #214c57;
+  --md-ref-palette-tertiary30-rgb: 33 76 87;
+  --md-ref-palette-tertiary40: #3b6470;
+  --md-ref-palette-tertiary40-rgb: 59 100 112;
+  --md-ref-palette-tertiary50: #547d89;
+  --md-ref-palette-tertiary50-rgb: 84 125 137;
+  --md-ref-palette-tertiary60: #6d97a3;
+  --md-ref-palette-tertiary60-rgb: 109 151 163;
+  --md-ref-palette-tertiary70: #88b2bf;
+  --md-ref-palette-tertiary70-rgb: 136 178 191;
+  --md-ref-palette-tertiary80: #a3cdda;
+  --md-ref-palette-tertiary80-rgb: 163 205 218;
+  --md-ref-palette-tertiary90: #beeaf7;
+  --md-ref-palette-tertiary90-rgb: 190 234 247;
+  --md-ref-palette-tertiary95: #d9f6ff;
+  --md-ref-palette-tertiary95-rgb: 217 246 255;
+  --md-ref-palette-tertiary99: #f8fdff;
+  --md-ref-palette-tertiary99-rgb: 248 253 255;
+  --md-ref-palette-tertiary100: #ffffff;
+  --md-ref-palette-tertiary100-rgb: 255 255 255;
+  
+  /* Neutral color palette */
+  --md-ref-palette-neutral0: #000000;
+  --md-ref-palette-neutral0-rgb: 0 0 0;
+  --md-ref-palette-neutral10: #191c1a;
+  --md-ref-palette-neutral10-rgb: 25 28 26;
+  --md-ref-palette-neutral20: #2e312e;
+  --md-ref-palette-neutral20-rgb: 46 49 46;
+  --md-ref-palette-neutral30: #454744;
+  --md-ref-palette-neutral30-rgb: 69 71 68;
+  --md-ref-palette-neutral40: #5c5f5b;
+  --md-ref-palette-neutral40-rgb: 92 95 91;
+  --md-ref-palette-neutral50: #757874;
+  --md-ref-palette-neutral50-rgb: 117 120 116;
+  --md-ref-palette-neutral60: #8f918d;
+  --md-ref-palette-neutral60-rgb: 143 145 141;
+  --md-ref-palette-neutral70: #aaaca7;
+  --md-ref-palette-neutral70-rgb: 170 172 167;
+  --md-ref-palette-neutral80: #c5c7c2;
+  --md-ref-palette-neutral80-rgb: 197 199 194;
+  --md-ref-palette-neutral90: #e1e3de;
+  --md-ref-palette-neutral90-rgb: 225 227 222;
+  --md-ref-palette-neutral95: #f0f1ec;
+  --md-ref-palette-neutral95-rgb: 240 241 236;
+  --md-ref-palette-neutral99: #fbfdf8;
+  --md-ref-palette-neutral99-rgb: 251 253 248;
+  --md-ref-palette-neutral100: #ffffff;
+  --md-ref-palette-neutral100-rgb: 255 255 255;
+  
+  /* Neutral variant color palette */
+  --md-ref-palette-neutral-variant0: #000000;
+  --md-ref-palette-neutral-variant0-rgb: 0 0 0;
+  --md-ref-palette-neutral-variant10: #161d18;
+  --md-ref-palette-neutral-variant10-rgb: 22 29 24;
+  --md-ref-palette-neutral-variant20: #2a322c;
+  --md-ref-palette-neutral-variant20-rgb: 42 50 44;
+  --md-ref-palette-neutral-variant30: #414942;
+  --md-ref-palette-neutral-variant30-rgb: 65 73 66;
+  --md-ref-palette-neutral-variant40: #586059;
+  --md-ref-palette-neutral-variant40-rgb: 88 96 89;
+  --md-ref-palette-neutral-variant50: #717971;
+  --md-ref-palette-neutral-variant50-rgb: 113 121 113;
+  --md-ref-palette-neutral-variant60: #8a938a;
+  --md-ref-palette-neutral-variant60-rgb: 138 147 138;
+  --md-ref-palette-neutral-variant70: #a5ada5;
+  --md-ref-palette-neutral-variant70-rgb: 165 173 165;
+  --md-ref-palette-neutral-variant80: #c0c9c0;
+  --md-ref-palette-neutral-variant80-rgb: 192 201 192;
+  --md-ref-palette-neutral-variant90: #dce5db;
+  --md-ref-palette-neutral-variant90-rgb: 220 229 219;
+  --md-ref-palette-neutral-variant95: #ebf3e9;
+  --md-ref-palette-neutral-variant95-rgb: 235 243 233;
+  --md-ref-palette-neutral-variant99: #f6fff5;
+  --md-ref-palette-neutral-variant99-rgb: 246 255 245;
+  --md-ref-palette-neutral-variant100: #ffffff;
+  --md-ref-palette-neutral-variant100-rgb: 255 255 255;
+  
+  /* Error color palette */
+  --md-ref-palette-error0: #000000;
+  --md-ref-palette-error0-rgb: 0 0 0;
+  --md-ref-palette-error10: #410002;
+  --md-ref-palette-error10-rgb: 65 0 2;
+  --md-ref-palette-error20: #690005;
+  --md-ref-palette-error20-rgb: 105 0 5;
+  --md-ref-palette-error30: #93000a;
+  --md-ref-palette-error30-rgb: 147 0 10;
+  --md-ref-palette-error40: #ba1a1a;
+  --md-ref-palette-error40-rgb: 186 26 26;
+  --md-ref-palette-error50: #de3730;
+  --md-ref-palette-error50-rgb: 222 55 48;
+  --md-ref-palette-error60: #ff5449;
+  --md-ref-palette-error60-rgb: 255 84 73;
+  --md-ref-palette-error70: #ff897d;
+  --md-ref-palette-error70-rgb: 255 137 125;
+  --md-ref-palette-error80: #ffb4ab;
+  --md-ref-palette-error80-rgb: 255 180 171;
+  --md-ref-palette-error90: #ffdad6;
+  --md-ref-palette-error90-rgb: 255 218 214;
+  --md-ref-palette-error95: #ffedea;
+  --md-ref-palette-error95-rgb: 255 237 234;
+  --md-ref-palette-error99: #fffbff;
+  --md-ref-palette-error99-rgb: 255 251 255;
+  --md-ref-palette-error100: #ffffff;
+  --md-ref-palette-error100-rgb: 255 255 255;
+  
+  /* Light */
+  --md-sys-color-primary-light: #006d3e;
+  --md-sys-color-primary-light-rgb: 0 109 62;
+  --md-sys-color-primary-container-light: #59ffa4;
+  --md-sys-color-primary-container-light-rgb: 89 255 164;
+  --md-sys-color-on-primary-light: #ffffff;
+  --md-sys-color-on-primary-light-rgb: 255 255 255;
+  --md-sys-color-on-primary-container-light: #00210f;
+  --md-sys-color-on-primary-container-light-rgb: 0 33 15;
+  --md-sys-color-inverse-primary-light: #00e387;
+  --md-sys-color-inverse-primary-light-rgb: 0 227 135;
+  
+  --md-sys-color-secondary-light: #4f6354;
+  --md-sys-color-secondary-light-rgb: 79 99 84;
+  --md-sys-color-secondary-container-light: #d1e8d5;
+  --md-sys-color-secondary-container-light-rgb: 209 232 213;
+  --md-sys-color-on-secondary-light: #ffffff;
+  --md-sys-color-on-secondary-light-rgb: 255 255 255;
+  --md-sys-color-on-secondary-container-light: #0c1f13;
+  --md-sys-color-on-secondary-container-light-rgb: 12 31 19;
+  
+  --md-sys-color-tertiary-light: #3b6470;
+  --md-sys-color-tertiary-light-rgb: 59 100 112;
+  --md-sys-color-tertiary-container-light: #beeaf7;
+  --md-sys-color-tertiary-container-light-rgb: 190 234 247;
+  --md-sys-color-on-tertiary-light: #ffffff;
+  --md-sys-color-on-tertiary-light-rgb: 255 255 255;
+  --md-sys-color-on-tertiary-container-light: #001f26;
+  --md-sys-color-on-tertiary-container-light-rgb: 0 31 38;
+  
+  --md-sys-color-error-light: #ba1a1a;
+  --md-sys-color-error-light-rgb: 186 26 26;
+  --md-sys-color-error-container-light: #ffdad6;
+  --md-sys-color-error-container-light-rgb: 255 218 214;
+  --md-sys-color-on-error-light: #ffffff;
+  --md-sys-color-on-error-light-rgb: 255 255 255;
+  --md-sys-color-on-error-container-light: #410002;
+  --md-sys-color-on-error-container-light-rgb: 65 0 2;
+  
+  --md-sys-color-background-light: #f8faf5;
+  --md-sys-color-background-light-rgb: 248 250 245;
+  --md-sys-color-on-background-light: #191c1a;
+  --md-sys-color-on-background-light-rgb: 25 28 26;
+  
+  --md-sys-color-on-surface-light: #191c1a;
+  --md-sys-color-on-surface-light-rgb: 25 28 26;
+  --md-sys-color-surface-light: #f8faf5;
+  --md-sys-color-surface-light-rgb: 248 250 245;
+  --md-sys-color-surface-dim-light: #d9dbd6;
+  --md-sys-color-surface-dim-light-rgb: 217 219 214;
+  --md-sys-color-surface-bright-light: #f8faf5;
+  --md-sys-color-surface-bright-light-rgb: 248 250 245;
+  
+  --md-sys-color-surface-container-lowest-light: #ffffff;
+  --md-sys-color-surface-container-lowest-light-rgb: 255 255 255;
+  --md-sys-color-surface-container-low-light: #f3f4ef;
+  --md-sys-color-surface-container-low-light-rgb: 243 244 239;
+  --md-sys-color-surface-container-light: #edeee9;
+  --md-sys-color-surface-container-light-rgb: 237 238 233;
+  --md-sys-color-surface-container-high-light: #e7e9e4;
+  --md-sys-color-surface-container-high-light-rgb: 231 233 228;
+  --md-sys-color-surface-container-highest-light: #e1e3de;
+  --md-sys-color-surface-container-highest-light-rgb: 225 227 222;
+  
+  --md-sys-color-on-surface-variant-light: #454744;
+  --md-sys-color-on-surface-variant-light-rgb: 69 71 68;
+  --md-sys-color-surface-variant-light: #e1e3de;
+  --md-sys-color-surface-variant-light-rgb: 225 227 222;
+  
+  --md-sys-color-outline-light: #717971;
+  --md-sys-color-outline-light-rgb: 113 121 113;
+  --md-sys-color-outline-variant-light: #c0c9c0;
+  --md-sys-color-outline-variant-light-rgb: 192 201 192;
+  
+  --md-sys-color-inverse-on-surface-light: #f0f1ec;
+  --md-sys-color-inverse-on-surface-light-rgb: 240 241 236;
+  --md-sys-color-inverse-surface-light: #2e312e;
+  --md-sys-color-inverse-surface-light-rgb: 46 49 46;
+  
+  --md-sys-color-surface-tint-light: #006d3e;
+  --md-sys-color-surface-tint-light-rgb: 0 109 62;
+  --md-sys-color-shadow-light: #000000;
+  --md-sys-color-shadow-light-rgb: 0 0 0;
+  --md-sys-color-scrim-light: #000000;
+  --md-sys-color-scrim-light-rgb: 0 0 0;
+  
+  /* Custom color "success" light */
+  --md-custom-color-success-light: #006e2b;
+  --md-custom-color-success-light-rgb: 0 110 43;
+  --md-custom-color-on-success-light: #ffffff;
+  --md-custom-color-on-success-light-rgb: 255 255 255;
+  --md-custom-color-success-container-light: #69ff89;
+  --md-custom-color-success-container-light-rgb: 105 255 137;
+  --md-custom-color-on-success-container-light: #002108;
+  --md-custom-color-on-success-container-light-rgb: 0 33 8;
+  
+  /* Custom color "warning" light */
+  --md-custom-color-warning-light: #4d6706;
+  --md-custom-color-warning-light-rgb: 77 103 6;
+  --md-custom-color-on-warning-light: #ffffff;
+  --md-custom-color-on-warning-light-rgb: 255 255 255;
+  --md-custom-color-warning-container-light: #ceef84;
+  --md-custom-color-warning-container-light-rgb: 206 239 132;
+  --md-custom-color-on-warning-container-light: #151f00;
+  --md-custom-color-on-warning-container-light-rgb: 21 31 0;
+  
+  /* Dark */
+  --md-sys-color-primary-dark: #00e387;
+  --md-sys-color-primary-dark-rgb: 0 227 135;
+  --md-sys-color-primary-container-dark: #00522d;
+  --md-sys-color-primary-container-dark-rgb: 0 82 45;
+  --md-sys-color-on-primary-dark: #00391e;
+  --md-sys-color-on-primary-dark-rgb: 0 57 30;
+  --md-sys-color-on-primary-container-dark: #59ffa4;
+  --md-sys-color-on-primary-container-dark-rgb: 89 255 164;
+  --md-sys-color-inverse-primary-dark: #006d3e;
+  --md-sys-color-inverse-primary-dark-rgb: 0 109 62;
+  
+  --md-sys-color-secondary-dark: #b6ccb9;
+  --md-sys-color-secondary-dark-rgb: 182 204 185;
+  --md-sys-color-secondary-container-dark: #384b3d;
+  --md-sys-color-secondary-container-dark-rgb: 56 75 61;
+  --md-sys-color-on-secondary-dark: #213527;
+  --md-sys-color-on-secondary-dark-rgb: 33 53 39;
+  --md-sys-color-on-secondary-container-dark: #d1e8d5;
+  --md-sys-color-on-secondary-container-dark-rgb: 209 232 213;
+  
+  --md-sys-color-tertiary-dark: #a3cdda;
+  --md-sys-color-tertiary-dark-rgb: 163 205 218;
+  --md-sys-color-tertiary-container-dark: #214c57;
+  --md-sys-color-tertiary-container-dark-rgb: 33 76 87;
+  --md-sys-color-on-tertiary-dark: #023640;
+  --md-sys-color-on-tertiary-dark-rgb: 2 54 64;
+  --md-sys-color-on-tertiary-container-dark: #beeaf7;
+  --md-sys-color-on-tertiary-container-dark-rgb: 190 234 247;
+  
+  --md-sys-color-error-dark: #ffb4ab;
+  --md-sys-color-error-dark-rgb: 255 180 171;
+  --md-sys-color-error-container-dark: #93000a;
+  --md-sys-color-error-container-dark-rgb: 147 0 10;
+  --md-sys-color-on-error-dark: #690005;
+  --md-sys-color-on-error-dark-rgb: 105 0 5;
+  --md-sys-color-on-error-container-dark: #ffdad6;
+  --md-sys-color-on-error-container-dark-rgb: 255 218 214;
+  
+  --md-sys-color-background-dark: #111411;
+  --md-sys-color-background-dark-rgb: 17 20 17;
+  --md-sys-color-on-background-dark: #e1e3de;
+  --md-sys-color-on-background-dark-rgb: 225 227 222;
+  
+  --md-sys-color-on-surface-dark: #e1e3de;
+  --md-sys-color-on-surface-dark-rgb: 225 227 222;
+  --md-sys-color-surface-dark: #111411;
+  --md-sys-color-surface-dark-rgb: 17 20 17;
+  --md-sys-color-surface-dim-dark: #111411;
+  --md-sys-color-surface-dim-dark-rgb: 17 20 17;
+  --md-sys-color-surface-bright-dark: #373a37;
+  --md-sys-color-surface-bright-dark-rgb: 55 58 55;
+  
+  --md-sys-color-surface-container-lowest-dark: #0c0f0c;
+  --md-sys-color-surface-container-lowest-dark-rgb: 12 15 12;
+  --md-sys-color-surface-container-low-dark: #191c1a;
+  --md-sys-color-surface-container-low-dark-rgb: 25 28 26;
+  --md-sys-color-surface-container-dark: #1d201d;
+  --md-sys-color-surface-container-dark-rgb: 29 32 29;
+  --md-sys-color-surface-container-high-dark: #282b28;
+  --md-sys-color-surface-container-high-dark-rgb: 40 43 40;
+  --md-sys-color-surface-container-highest-dark: #333532;
+  --md-sys-color-surface-container-highest-dark-rgb: 51 53 50;
+  
+  --md-sys-color-on-surface-variant-dark: #c5c7c2;
+  --md-sys-color-on-surface-variant-dark-rgb: 197 199 194;
+  --md-sys-color-surface-variant-dark: #454744;
+  --md-sys-color-surface-variant-dark-rgb: 69 71 68;
+  
+  --md-sys-color-outline-dark: #8a938a;
+  --md-sys-color-outline-dark-rgb: 138 147 138;
+  --md-sys-color-outline-variant-dark: #414942;
+  --md-sys-color-outline-variant-dark-rgb: 65 73 66;
+  
+  --md-sys-color-inverse-on-surface-dark: #2e312e;
+  --md-sys-color-inverse-on-surface-dark-rgb: 46 49 46;
+  --md-sys-color-inverse-surface-dark: #e1e3de;
+  --md-sys-color-inverse-surface-dark-rgb: 225 227 222;
+  
+  --md-sys-color-surface-tint-dark: #00e387;
+  --md-sys-color-surface-tint-dark-rgb: 0 227 135;
+  --md-sys-color-shadow-dark: #000000;
+  --md-sys-color-shadow-dark-rgb: 0 0 0;
+  --md-sys-color-scrim-dark: #000000;
+  --md-sys-color-scrim-dark-rgb: 0 0 0;
+  
+  /* Custom color "success" dark */
+  --md-custom-color-success-dark: #00e563;
+  --md-custom-color-success-dark-rgb: 0 229 99;
+  --md-custom-color-on-success-dark: #003913;
+  --md-custom-color-on-success-dark-rgb: 0 57 19;
+  --md-custom-color-success-container-dark: #00531f;
+  --md-custom-color-success-container-dark-rgb: 0 83 31;
+  --md-custom-color-on-success-container-dark: #69ff89;
+  --md-custom-color-on-success-container-dark-rgb: 105 255 137;
+  
+  /* Custom color "warning" dark */
+  --md-custom-color-warning-dark: #b2d26b;
+  --md-custom-color-warning-dark-rgb: 178 210 107;
+  --md-custom-color-on-warning-dark: #263500;
+  --md-custom-color-on-warning-dark-rgb: 38 53 0;
+  --md-custom-color-warning-container-dark: #394e00;
+  --md-custom-color-warning-container-dark-rgb: 57 78 0;
+  --md-custom-color-on-warning-container-dark: #ceef84;
+  --md-custom-color-on-warning-container-dark-rgb: 206 239 132;
+  
+  /* Display - Large */
+  --md-sys-typescale-display-large-font-family-name: Roboto;
+  --md-sys-typescale-display-large-font-family-style: Regular;
+  --md-sys-typescale-display-large-font-weight: 400;
+  --md-sys-typescale-display-large-font-size: 3.5625rem;
+  --md-sys-typescale-display-large-line-height: 4rem;
+  --md-sys-typescale-display-large-letter-spacing: -0.015625rem;
+  --md-sys-typescale-display-large: normal 400 3.5625rem/4rem Roboto;
+  
+  /* Display - Medium */
+  --md-sys-typescale-display-medium-font-family-name: Roboto;
+  --md-sys-typescale-display-medium-font-family-style: Regular;
+  --md-sys-typescale-display-medium-font-weight: 400;
+  --md-sys-typescale-display-medium-font-size: 2.8125rem;
+  --md-sys-typescale-display-medium-line-height: 3.25rem;
+  --md-sys-typescale-display-medium-letter-spacing: 0;
+  --md-sys-typescale-display-medium: normal 400 2.8125rem/3.25rem Roboto;
+  
+  /* Display - Small */
+  --md-sys-typescale-display-small-font-family-name: Roboto;
+  --md-sys-typescale-display-small-font-family-style: Regular;
+  --md-sys-typescale-display-small-font-weight: 400;
+  --md-sys-typescale-display-small-font-size: 2.25rem;
+  --md-sys-typescale-display-small-line-height: 2.75rem;
+  --md-sys-typescale-display-small-letter-spacing: 0;
+  --md-sys-typescale-display-small: normal 400 2.25rem/2.75rem Roboto;
+  
+  /* Headline - Large */
+  --md-sys-typescale-headline-large-font-family-name: Roboto;
+  --md-sys-typescale-headline-large-font-family-style: Regular;
+  --md-sys-typescale-headline-large-font-weight: 400;
+  --md-sys-typescale-headline-large-font-size: 2rem;
+  --md-sys-typescale-headline-large-line-height: 2.5rem;
+  --md-sys-typescale-headline-large-letter-spacing: 0;
+  --md-sys-typescale-headline-large: normal 400 2rem/2.5rem Roboto;
+  
+  /* Headline - Medium */
+  --md-sys-typescale-headline-medium-font-family-name: Roboto;
+  --md-sys-typescale-headline-medium-font-family-style: Regular;
+  --md-sys-typescale-headline-medium-font-weight: 400;
+  --md-sys-typescale-headline-medium-font-size: 1.75rem;
+  --md-sys-typescale-headline-medium-line-height: 2.25rem;
+  --md-sys-typescale-headline-medium-letter-spacing: 0;
+  --md-sys-typescale-headline-medium: normal 400 1.75rem/2.25rem Roboto;
+  
+  /* Headline - Small */
+  --md-sys-typescale-headline-small-font-family-name: Roboto;
+  --md-sys-typescale-headline-small-font-family-style: Regular;
+  --md-sys-typescale-headline-small-font-weight: 400;
+  --md-sys-typescale-headline-small-font-size: 1.5rem;
+  --md-sys-typescale-headline-small-line-height: 2rem;
+  --md-sys-typescale-headline-small-letter-spacing: 0;
+  --md-sys-typescale-headline-small: normal 400 1.5rem/2rem Roboto;
+  
+  /* Body - Large */
+  --md-sys-typescale-body-large-font-family-name: Roboto;
+  --md-sys-typescale-body-large-font-family-style: Regular;
+  --md-sys-typescale-body-large-font-weight: 400;
+  --md-sys-typescale-body-large-font-size: 1rem;
+  --md-sys-typescale-body-large-line-height: 1.5rem;
+  --md-sys-typescale-body-large-letter-spacing: 0.03125rem;
+  --md-sys-typescale-body-large: normal 400 1rem/1.5rem Roboto;
+  
+  /* Body - Medium */
+  --md-sys-typescale-body-medium-font-family-name: Roboto;
+  --md-sys-typescale-body-medium-font-family-style: Regular;
+  --md-sys-typescale-body-medium-font-weight: 400;
+  --md-sys-typescale-body-medium-font-size: 0.875rem;
+  --md-sys-typescale-body-medium-line-height: 1.25rem;
+  --md-sys-typescale-body-medium-letter-spacing: 0.015625rem;
+  --md-sys-typescale-body-medium: normal 400 0.875rem/1.25rem Roboto;
+  
+  /* Body - Small */
+  --md-sys-typescale-body-small-font-family-name: Roboto;
+  --md-sys-typescale-body-small-font-family-style: Regular;
+  --md-sys-typescale-body-small-font-weight: 400;
+  --md-sys-typescale-body-small-font-size: 0.75rem;
+  --md-sys-typescale-body-small-line-height: 1rem;
+  --md-sys-typescale-body-small-letter-spacing: 0.025rem;
+  --md-sys-typescale-body-small: normal 400 0.75rem/1rem Roboto;
+  
+  /* Label - Large */
+  --md-sys-typescale-label-large-font-family-name: Roboto;
+  --md-sys-typescale-label-large-font-family-style: Medium;
+  --md-sys-typescale-label-large-font-weight: 500;
+  --md-sys-typescale-label-large-font-size: 0.875rem;
+  --md-sys-typescale-label-large-line-height: 1.25rem;
+  --md-sys-typescale-label-large-letter-spacing: 0.00625rem;
+  --md-sys-typescale-label-large: normal 500 0.875rem/1.25rem Roboto;
+  
+  /* Label - Medium */
+  --md-sys-typescale-label-medium-font-family-name: Roboto;
+  --md-sys-typescale-label-medium-font-family-style: Medium;
+  --md-sys-typescale-label-medium-font-weight: 500;
+  --md-sys-typescale-label-medium-font-size: 0.75rem;
+  --md-sys-typescale-label-medium-line-height: 1rem;
+  --md-sys-typescale-label-medium-letter-spacing: 0.03125rem;
+  --md-sys-typescale-label-medium: normal 500 0.75rem/1rem Roboto;
+  
+  /* Label - Small */
+  --md-sys-typescale-label-small-font-family-name: Roboto;
+  --md-sys-typescale-label-small-font-family-style: Medium;
+  --md-sys-typescale-label-small-font-weight: 500;
+  --md-sys-typescale-label-small-font-size: 0.6875rem;
+  --md-sys-typescale-label-small-line-height: 1rem;
+  --md-sys-typescale-label-small-letter-spacing: 0.03125rem;
+  --md-sys-typescale-label-small: normal 500 0.6875rem/1rem Roboto;
+  
+  /* Title - Large */
+  --md-sys-typescale-title-large-font-family-name: Roboto;
+  --md-sys-typescale-title-large-font-family-style: Regular;
+  --md-sys-typescale-title-large-font-weight: 400;
+  --md-sys-typescale-title-large-font-size: 1.375rem;
+  --md-sys-typescale-title-large-line-height: 1.75rem;
+  --md-sys-typescale-title-large-letter-spacing: 0;
+  --md-sys-typescale-title-large: normal 400 1.375rem/1.75rem Roboto;
+  
+  /* Title - Medium */
+  --md-sys-typescale-title-medium-font-family-name: Roboto;
+  --md-sys-typescale-title-medium-font-family-style: Medium;
+  --md-sys-typescale-title-medium-font-weight: 500;
+  --md-sys-typescale-title-medium-font-size: 1rem;
+  --md-sys-typescale-title-medium-line-height: 1.5rem;
+  --md-sys-typescale-title-medium-letter-spacing: 0.009375rem;
+  --md-sys-typescale-title-medium: normal 500 1rem/1.5rem Roboto;
+  
+  /* Title - Small */
+  --md-sys-typescale-title-small-font-family-name: Roboto;
+  --md-sys-typescale-title-small-font-family-style: Medium;
+  --md-sys-typescale-title-small-font-weight: 500;
+  --md-sys-typescale-title-small-font-size: 0.875rem;
+  --md-sys-typescale-title-small-line-height: 1.25rem;
+  --md-sys-typescale-title-small-letter-spacing: 0.00625rem;
+  --md-sys-typescale-title-small: normal 500 0.875rem/1.25rem Roboto;
+}

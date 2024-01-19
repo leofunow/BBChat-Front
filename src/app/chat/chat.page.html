@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title>User name</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" >
+  <!-- <ion-infinite-scroll>
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll> -->
+  <ion-list lines="none" id="messages">
+    <ion-item *ngFor="let item of messages">
+      <app-message style="width: 100%;" [align]="item.align" [time]="item.time"><div [innerHTML]="getHTMLMessage(item.message)" style="height: fit-content;"></div></app-message>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons class="footer" style="padding: 6px 16px;">
+      <ion-textarea [(ngModel)]="text" placeholder="message" id="message" #message [autoGrow]="true" rows="1" lines="none">
+      </ion-textarea>
+      <ion-button *ngIf="text.length > 0" (click)="text = ''" fill="clear" slot="end" aria-label="Show/hide">
+        <ion-icon slot="icon-only" name="close-circle-outline" aria-hidden="true"></ion-icon>
+      </ion-button>
+      <ion-button fill="solid" shape="round" id="send__button" color="primary" (click)="send()">Send</ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-footer>

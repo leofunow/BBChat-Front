@@ -1,0 +1,16 @@
+<ion-content>
+  <ion-list>
+    <ion-item [button]="true" (click)="goToChat()" *ngFor="let item of [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]">
+      <ion-avatar aria-hidden="true" slot="start"><img alt=""
+          src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+
+      <ion-label>
+        <strong>User Name</strong>
+        <ion-note>message</ion-note>
+      </ion-label>
+      <ion-note>time</ion-note>
+
+    </ion-item>
+  </ion-list>
+</ion-content>

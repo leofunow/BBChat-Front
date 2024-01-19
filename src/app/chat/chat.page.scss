@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  ion-textarea {
+    max-height: 200px;
+    overflow: scroll;
+  }
+}
+
+#messages {
+    height: 100%;
+}
+
+#send__button {
+  --padding-top: 16px;
+  --padding-bottom: 16px;
+  --padding-start: 12px;
+  --padding-end: 12px;
+}
